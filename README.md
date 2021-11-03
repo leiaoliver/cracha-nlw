@@ -20,7 +20,7 @@
 <br>
 
 <p align="center">
-  <img alt="Chachá NLW Heat" src=".github/readme.png" width="100%">
+  <img alt="Chachá NLW Heat" src="https://github.com/leiaoliver/cracha-nlw/blob/main/images/readme.png?raw=true" width="100%">
 </p>
 
 ## 🚀 Tecnologias
