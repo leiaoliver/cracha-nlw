@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  /*variável*/
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+@media (min-width: 426px) {
+  main {
+    background: url(images/desktop.svg) no-repeat center/cover;
+    background-color: black;
+  }
+}
+
+#seloRocketseat {
+  animation: rotation 25s infinite linear;
+}
+
+#instagramHover {
+  transition: 0.5s;
+}
+
+#instagramHover:hover {
+  background-color: #c13584;
+  transition: 0.5s;
+  filter: opacity(0.6);
+  filter: grayscale(0%);
+}
+
+#facebookHover {
+  transition: 0.5s;
+}
+
+#facebookHover:hover {
+  background-color: #4267b2;
+  transition: 0.5s;
+  filter: opacity(0.6);
+  filter: grayscale(0%);
+}
+
+#twitterHover {
+  transition: 0.5s;
+}
+
+#twitterHover:hover {
+  background-color: #1da1f2;
+  transition: 0.5s;
+  filter: opacity(0.6);
+  filter: grayscale(0%);
+}
+
+#userLink {
+  transition: 0.5s;
+}
+
+#userLink:hover {
+  transition: 0.5s;
+  filter: opacity(0.6);
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 3rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex; /*deixa os li um ao lado do outo*/
+  gap: 0.5rem; /*é liberado por conta do display:flex*/
+
+  justify-content: center; /*é liberado por conta do display:flex*/
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
